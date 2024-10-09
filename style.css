@@ -1,0 +1,146 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    background: url(./bg3.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header .left img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    left: 25px;
+}
+
+.header .left div {
+    font-size: 28px;
+}
+
+.header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+.header .navbar li {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.header .navbar li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .navbar li a:hover {
+    color: #06b3f4;
+}
+
+.header .right .btn {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header .right .btn:hover {
+    background-color: #333;
+    color: #39a4f4;
+}
+
+/* Marquee styling */
+#cont {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cont marquee {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #06b3f4;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #06b3f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #0582c2;
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header .navbar {
+        margin-top: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
